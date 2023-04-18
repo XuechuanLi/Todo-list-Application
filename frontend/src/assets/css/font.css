@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "iconfont"; /* Project id 2992455 */
+    src: url('//at.alicdn.com/t/font_2992455_9ff8hbg01ed.woff2?t=1638795095649') format('woff2'),
+         url('//at.alicdn.com/t/font_2992455_9ff8hbg01ed.woff?t=1638795095649') format('woff'),
+         url('//at.alicdn.com/t/font_2992455_9ff8hbg01ed.ttf?t=1638795095649') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-bar-chart-2-line:before {
+    content: "\e618";
+  }
+  
+  .icon-bar-chart-2-fill:before {
+    content: "\e61a";
+  }
+  
+  .icon-bookmark-line:before {
+    content: "\e61d";
+  }
+  
+  .icon-bookmark-fill:before {
+    content: "\e61e";
+  }
+  
+  .icon-chat-1-fill:before {
+    content: "\e65d";
+  }
+  
+  .icon-chat-1-line:before {
+    content: "\e65e";
+  }
+  
+  .icon-book-read-fill:before {
+    content: "\e779";
+  }
+  
+  .icon-book-read-line:before {
+    content: "\e77a";
+  }
+  
+  .icon-heart-3-fill:before {
+    content: "\e909";
+  }
+  
+  .icon-heart-3-line:before {
+    content: "\e90a";
+  }
+  
+  .icon-qq-fill:before {
+    content: "\e993";
+  }
+  
+  .icon-twitter-fill:before {
+    content: "\e9b7";
+  }
+  
+  .icon-wechat-fill:before {
+    content: "\e9c5";
+  }
+  
+  .icon-weibo-fill:before {
+    content: "\e9c9";
+  }
+  
+  .icon-loader-4-fill:before {
+    content: "\ec03";
+  }
+  
+  .icon-loader-5-fill:before {
+    content: "\ec05";
+  }
+  
+  .icon-search-fill:before {
+    content: "\ec39";
+  }
+  
+  .icon-search-line:before {
+    content: "\ec3a";
+  }
+  
+  .icon-share-fill:before {
+    content: "\ec4a";
+  }
+  
+  .icon-share-line:before {
+    content: "\ec51";
+  }
+  
+  .icon-star-s-fill:before {
+    content: "\ec6c";
+  }
+  
+  .icon-star-s-line:before {
+    content: "\ec6d";
+  }
+  
+  .icon-thumb-up-fill:before {
+    content: "\ec71";
+  }
+  
+  .icon-thumb-up-line:before {
+    content: "\ec73";
+  }
+  
+  

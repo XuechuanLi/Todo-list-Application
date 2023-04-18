@@ -1,0 +1,34 @@
+.welcome {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome .content {
+    font-size: 30px;
+    position: absolute;
+    top: 35%;
+}
+
+.welcome .buttons{
+    position: absolute;
+    top: 60%;
+    list-style-type: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome .btn {
+    margin: 10px;
+}

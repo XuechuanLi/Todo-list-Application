@@ -1,0 +1,14 @@
+.todoList {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 90%;
+    background-color: lightyellow;
+    overflow: scroll;
+}
+
+.todoList .todoItemComplete {
+    position: fixed;
+    left: 10%;
+    top: 20%;
+}

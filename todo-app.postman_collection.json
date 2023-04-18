@@ -1,0 +1,335 @@
+{
+	"info": {
+		"_postman_id": "3c57bea3-f611-44bc-8fbe-ddeb0fa6982a",
+		"name": "todo-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24003571"
+	},
+	"item": [
+		{
+			"name": "Get All Groups",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create A Group",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"jackpot\": 50,\r\n        \"title\": \"Learnign js\",\r\n        \"content\": \"Learnign js group\",\r\n        \"members\": [\r\n            {\r\n                \"uid\": \"63b6e0d53ba748dda2eb25ad\",\r\n                \"username\": \"A\",\r\n                \"points\": 50,\r\n                \"deadlines\": [\r\n                    \"2022-12-10T10:00:00Z\",\r\n                    \"2022-12-11T10:00:00Z\",\r\n                    \"2022-12-12T10:00:00Z\"\r\n                ],\r\n                \"is_checked\": [\r\n                    true,\r\n                    true,\r\n                    false\r\n                ],\r\n                \"is_received_points\": false\r\n            }\r\n        ]\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/groups",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"groups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetGroupsByUID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/groups/63b6e0d53ba748dda2eb25ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"groups",
+						"63b6e0d53ba748dda2eb25ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMemberByGIDUID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/member/63b6ec37b6a49a39436f0c29/63b6e0d53ba748dda2eb25ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"63b6ec37b6a49a39436f0c29",
+						"63b6e0d53ba748dda2eb25ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMemberByGIDUID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"uid\": \"63b6e0d53ba748dda2eb25ad\",\r\n                \"username\": \"AA\",\r\n                \"points\": 50,\r\n                \"deadlines\": [\r\n                    \"2022-12-10T10:00:00Z\",\r\n                    \"2022-12-11T10:00:00Z\"\r\n                ],\r\n                \"is_checked\": [\r\n                    true,\r\n                    true\r\n                ],\r\n                \"is_received_points\": false\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/member/63b6ec37b6a49a39436f0c29/63b6e0d53ba748dda2eb25ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"member",
+						"63b6ec37b6a49a39436f0c29",
+						"63b6e0d53ba748dda2eb25ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JoinGroupByGID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"uid\": \"63b713a7855b9d7d941275ce\",\r\n        \"username\": \"E\",\r\n        \"email\": \"E@example.com\",\r\n        \"password\": \"ffff\",\r\n        \"points\": 10,\r\n        \"created_at\": \"2023-01-05T15:16:22.633Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/groups/join?gid=63b6ec37b6a49a39436f0c29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"groups",
+						"join"
+					],
+					"query": [
+						{
+							"key": "gid",
+							"value": "63b6ec37b6a49a39436f0c29"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuitGroupByGID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/groups/quit?gid=63b6ec37b6a49a39436f0c29&uid=63b713a7855b9d7d941275ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"groups",
+						"quit"
+					],
+					"query": [
+						{
+							"key": "gid",
+							"value": "63b6ec37b6a49a39436f0c29"
+						},
+						{
+							"key": "uid",
+							"value": "63b713a7855b9d7d941275ce"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteGroupByGID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/groups/63b7a23c675872fa95b0e972",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"groups",
+						"63b7a23c675872fa95b0e972"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateGroupByGID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"jackpot\": 100,\r\n        \"title\": \"Learning Golang\",\r\n        \"content\": \"A group that aims to help each other learn golang\",\r\n        \"members\": [\r\n            {\r\n                \"uid\": \"63b6e0d53ba748dda2eb25ae\",\r\n                \"username\": \"B\",\r\n                \"points\": 50,\r\n                \"deadlines\": [\r\n                    \"2022-12-10T10:00:00Z\",\r\n                    \"2022-12-11T10:00:00Z\"\r\n                ],\r\n                \"is_checked\": [\r\n                    false,\r\n                    false\r\n                ],\r\n                \"is_received_points\": false\r\n            },\r\n            {\r\n                \"uid\": \"63b6e0d53ba748dda2eb25ad\",\r\n                \"username\": \"A\",\r\n                \"points\": 50,\r\n                \"deadlines\": [\r\n                    \"2022-12-10T10:00:00Z\",\r\n                    \"2022-12-11T10:00:00Z\"\r\n                ],\r\n                \"is_checked\": [\r\n                    false,\r\n                    false\r\n                ],\r\n                \"is_received_points\": false\r\n            }\r\n        ]\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/groups/63b6ec37b6a49a39436f0c29",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"groups",
+						"63b6ec37b6a49a39436f0c29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One User By UID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/63b6e0d53ba748dda2eb25ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"63b6e0d53ba748dda2eb25ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create A New User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\": \"E\",\r\n        \"email\": \"E@example.com\",\r\n        \"password\": \"ffff\",\r\n        \"points\": 100,\r\n        \"created_at\": \"2023-01-05T15:16:22.633Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update A User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"username\": \"AA\",\r\n        \"email\": \"A@example.com\",\r\n        \"password\": \"ASBF\",\r\n        \"points\": 1000,\r\n        \"created_at\": \"2023-01-05T14:38:13.983Z\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/63b6e0d53ba748dda2eb25ad",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"63b6e0d53ba748dda2eb25ad"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete A User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/63b713a7855b9d7d941275ce",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"63b713a7855b9d7d941275ce"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

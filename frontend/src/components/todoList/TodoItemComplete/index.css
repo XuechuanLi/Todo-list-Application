@@ -1,0 +1,33 @@
+.todoItemComplete {
+    /* height: 200px; */
+    width: 80%;
+    border: 1px solid black;
+    background-color: lightgreen;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.todoItemComplete .todoListCompleteSubmit {
+    
+    margin-left: 10px;
+}
+.todoItemComplete .todoListCompleteCancel {
+    
+    margin-right: 10px;
+}
+
+/* .btn1 {
+    max-width: fit-content;
+    display: flex;
+    place-items: center;
+    gap: 0.5em;
+    background-color: hsl(var(--accent));
+    color: hsl(var(--bg));
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: var(--_radius);
+    box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
+      0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
+    transition: box-shadow var(--_tspeed_fast) var(--_ttype_squish),
+      background-color var(--_tspeed_fast) var(--_ttype_squish);
+  } */

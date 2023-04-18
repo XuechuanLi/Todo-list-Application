@@ -1,0 +1,42 @@
+.login {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .buttons{
+    position: absolute;
+    top: 60%;
+    list-style-type: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .btn {
+    margin: 10px;
+}
+
+.loginResult {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    top: 70%;
+    margin-top: 10px;
+    list-style-type: none;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

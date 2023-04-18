@@ -1,0 +1,17 @@
+.searchBar {
+    height: 40px;
+    width: 100%;
+    background-color: lightpink;
+    display: flex;
+    align-items:center;
+}
+
+.searchBar .searchInput {
+    width: 70%;
+    height: 30px;
+}
+
+.searchBar .searchBtn {
+    width: 20%;
+    height: 30px;
+}
