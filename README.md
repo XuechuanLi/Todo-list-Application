@@ -2,9 +2,7 @@
 
 XuechuanLi created by GitHub Classroom as a member of back-end team
 
-This is the Github Repo for Group 4-a
-
-Class: Software Cloud Development Project Practice IV
+This is the Github Repo for our Group 
 
 Project: To-DO List Application
 
