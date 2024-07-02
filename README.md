@@ -7,9 +7,9 @@ This is the Github Repo for our Group
 Project: To-DO List Application
 
 We developed a todo-list, which focuses on setting routines
-• To help users stick to their routines, we propose two features
-• Group-based
-• Punch in with a figure
+To help users stick to their routines, we propose two features
+1. Group-based
+2. Punch in with a figure
 
 ## 
 
